@@ -69,6 +69,14 @@ shinyServer(function(input, output) {
       labs(title = "Cooccurrences within skipgram words distance")
     
   })
+  output$xpossummary = renderPrint({
+    x=annotate_data()
+    all_nouns = x %>% subset(., upos %in% c(input$checkGroup))
+    top_nouns = txt_freq(all_nouns$lemma)
+    # txt_freq() calcs noun freqs in desc order
+    head(top_nouns, 20)
+    
+  })
     output$wordcloud = renderPlot({
     x=annotate_data()
     all_nouns = x %>% subset(., upos %in% c(input$checkGroup))

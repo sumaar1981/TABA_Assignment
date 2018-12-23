@@ -31,7 +31,7 @@ library(ggplot2)
 shinyUI(
   fluidPage(
     
-    titlePanel("Co-occurences plot"),
+    titlePanel("NLP using Udpipe"),
     sidebarLayout(
       sidebarPanel(  
         
@@ -91,7 +91,11 @@ shinyUI(
                              br(),
                              plotOutput("skipplot")
                              ),
-                    tabPanel("Word Cloud",  
+                    tabPanel("Frequency and Word Cloud", 
+                             h4("Top 20 Words"),
+                             verbatimTextOutput("xpossummary"),
+                             br(),
+                             h4("Word Cloud"),
                              plotOutput("wordcloud",height = 700, width = 700))
                     
         ) # end of tabsetPanel  
