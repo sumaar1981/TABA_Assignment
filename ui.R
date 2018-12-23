@@ -60,7 +60,7 @@ shinyUI(
                     tabPanel("Overview",h4(p("Data input")),
                              p("This app supports input as text file.",align="justify"),
                              p("Please refer to the link below for sample input file."),
-                             a(href="https://github.com/sudhir-voleti/sample-data-sets/blob/master/Segmentation%20Discriminant%20and%20targeting%20data/ConneCtorPDASegmentation.csv"
+                             a(href="https://github.com/sumaar1981/TABA_Assignment/blob/master/Nokia_Lumia_reviews.txt"
                                ,"Sample data input file"),   
                              br(),br(),
                              p("You also need to provide udpipe model as second input.",align="justify"),
