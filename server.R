@@ -1,4 +1,6 @@
-#
+#11810118 Suman Goyal
+#11810102 Akshay 
+#11810088 Akash Jain
 # This is the server logic of a Shiny web application. You can run the 
 # application by clicking 'Run App' above.
 #
